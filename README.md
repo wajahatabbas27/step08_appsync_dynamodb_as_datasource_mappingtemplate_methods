@@ -11,3 +11,5 @@ request mapping template and the response mapping template
 for adding we r using - dynamodbPutItem
 
 for every technique we are using different params , for example for adding , we are using dynamoDb.putitems and it has 2 arguments , one for the id other for the projection
+
+# its basically mapping method : AppSync and DynamoDb as a DataSource
