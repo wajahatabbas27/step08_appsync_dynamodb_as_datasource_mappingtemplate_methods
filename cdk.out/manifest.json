@@ -1,0 +1,148 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c4e77714e213bd91cda9c87518dcacc5a7c6a3433b1a37258671e21e23a5603c.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack.assets"
+      ],
+      "metadata": {
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApi1B6CF24C"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/Schema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiSchema1B71CE4F"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DefaultApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDefaultApiKey47EE7128"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSourceServiceRole9EB9735A"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSourceServiceRoleDefaultPolicyCA4F420D"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSource9FC4F4AD"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/MutationcreateNoteResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSourceMutationcreateNoteResolver7A6CCA4E"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/QuerynotesResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSourceQuerynotesResolver1A19C428"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/MutationdeleteNoteResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSourceMutationdeleteNoteResolver302D4A75"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/GraphqlApi/DataSource/MutationupdateNoteResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphqlApiDataSourceMutationupdateNoteResolverE6DA00AF"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/ApiGraphqlUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiGraphqlUrl"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/apiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiKey"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/DynamoDbTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDbTable6316879D"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "16.0.0",
+  "files": {
+    "c4e77714e213bd91cda9c87518dcacc5a7c6a3433b1a37258671e21e23a5603c": {
+      "source": {
+        "path": "Step08AppsyncDynamodbAsDatasourceMappingtemplateMethodsStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "c4e77714e213bd91cda9c87518dcacc5a7c6a3433b1a37258671e21e23a5603c.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
